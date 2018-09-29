@@ -1,0 +1,30 @@
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import 'font-face';
+
+body{
+  font-family: 'open_sans', sans-serif;
+  word-spacing: 1px !important;
+}
+
+h2 {
+  color: #0eb493;
+  font-size: 24px !important;
+  margin-top: 80px;
+  font-family: 'open_sansExtraBold', sans-serif;
+  @media screen and (max-width: 367px ) {
+    margin-top: 50px;
+  }
+  @media screen and( min-width: 1600px) {
+    font-size: 28px !important;
+    margin-top: 100px;
+  }
+}
+
+@import 'header';
+@import 'main';
+@import 'footer';
