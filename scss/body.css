@@ -2,50 +2,16 @@
   margin: 0;
   box-sizing: border-box; }
 
-@font-face {
-  font-family: 'open_sansBold';
-  src: url("../fonts/opensans/OpenSans-Bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansExtraBold';
-  src: url("../fonts/opensans/OpenSans-ExtraBold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansLight';
-  src: url("../fonts/opensans/OpenSans-Light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansRegular';
-  src: url("../fonts/opensans/OpenSans-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sansSemiBold';
-  src: url("../fonts/opensans/OpenSans-Semibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'open_sans';
-  src: url("../fonts/opensans/OpenSans-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'pacifico';
-  src: url("../fonts/pacifico/Pacifico-Regular.ttf") format("woff");
-  font-weight: normal;
-  font-style: normal; }
 body {
-  font-family: 'open_sans', sans-serif;
+  font-family: 'Arial', sans-serif;
   word-spacing: 1px !important; }
 
 h2 {
   color: #0eb493;
   font-size: 24px !important;
   margin-top: 80px;
-  font-family: 'open_sansExtraBold', sans-serif; }
+  font-weight: bold;
+  font-family: 'Roboto' , sans-serif; }
   @media screen and (max-width: 367px) {
     h2 {
       margin-top: 50px; } }
@@ -62,75 +28,86 @@ h2 {
   transition: background-color 0.6s ease;
   margin: 8px 1px 1px 1px; }
 
+/* header top */
+.mg-top-20 {
+  margin-top: 25px;
+  font-size: 15px; }
+
+.mg-top-10 {
+  margin-top: 5px; }
+
+.bg-gray {
+  background-color: #f7f9fa; }
+
+.na-brand {
+  padding: 5px 5px 5px 15px;
+  margin-top: 18px;
+  margin-left: 0 !important; }
+  @media screen and (min-width: 1600px) {
+    .na-brand {
+      margin-top: 24px; } }
+  @media screen and (max-width: 768px) {
+    .na-brand {
+      margin-left: 0 !important; } }
+
+.navbar-right {
+  margin-right: 0; }
+
+.na-sign-in {
+  color: #a0a3a7;
+  margin-right: 20px; }
+
+.na-sign-in:hover {
+  color: orange;
+  text-decoration: none; }
+
+.langauge {
+  margin-right: 20px;
+  float: right; }
+  .langauge p a {
+    color: #a0a3a7; }
+  .langauge p a:hover {
+    color: orange;
+    text-decoration: none; }
+
+.na-bot {
+  margin-right: 25%;
+  float: right; }
+
 .na {
   margin-bottom: 0;
   border: 0;
   font-size: 11px !important;
   opacity: 0.9;
-  background-color: #0b2426 !important; }
-  .na .na-brand {
-    font-family: 'pacifico', cursive;
-    font-weight: lighter;
-    font-size: 25px;
-    color: white  !important;
-    padding: 5px 5px 5px 15px;
-    margin-top: 18px;
-    margin-left: 0 !important; }
-    @media screen and (min-width: 1600px) {
-      .na .na-brand {
-        margin-top: 24px;
-        font-size: 28px; } }
-    @media screen and (max-width: 768px) {
-      .na .na-brand {
-        margin-left: 0 !important;
-        font-size: 18px; } }
-  .na .na-middle {
-    margin-top: 23px;
-    color: #4e4e4e;
-    font-size: 14px;
-    float: left;
-    margin-left: 1.5%; }
-    @media screen and (max-width: 768px) {
-      .na .na-middle {
-        margin-left: 1% !important; } }
-    @media screen and (min-width: 1600px) {
-      .na .na-middle {
-        margin-top: 26px;
-        font-size: 18px; } }
-  .na .na-form {
-    margin-top: 23.5px;
-    float: left;
-    margin-left: 1%; }
-    @media screen and (max-width: 367px) {
-      .na .na-form {
-        margin-top: 21px; } }
-    @media screen and (min-width: 1600px) {
-      .na .na-form {
-        margin-top: 26px; } }
-  .na .na-textHeader {
-    font-size: 11px;
-    width: 80%;
-    background-color: #0b2426;
-    border-style: none;
-    color: white;
-    padding: 5px; }
-    @media screen and (min-width: 1600px) {
-      .na .na-textHeader {
-        font-size: 13px; } }
+  background: black !important;
+  z-index: 1; }
   .na .na-item {
-    color: #d5d5d5 !important; }
+    font-size: 16px;
+    font-family: 'Arial',san-serif;
+    color: #d5d5d5 !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    margin-right: 100px; }
     @media screen and (max-width: 768px) {
       .na .na-item {
         text-align: center; } }
     @media screen and (min-width: 1600px) {
       .na .na-item {
         font-size: 13px; } }
+  .na .nav .open > a, .na .nav .open > a:focus, .na .nav .open > a:hover {
+    background: none !important; }
   .na .na-item:hover {
     color: #fff !important;
-    background-color: red !important; }
+    background: none !important;
+    border-bottom: 1px solid orange !important; }
+  .na .na-item:active {
+    color: #fff !important;
+    background: none !important;
+    border-bottom: 1px solid orange !important; }
   .na .na-right {
     margin-top: 10px;
-    margin-right: 15px; }
+    vertical-align: baseline; }
     @media screen and (max-width: 787px) {
       .na .na-right {
         margin-right: auto; } }
@@ -143,6 +120,8 @@ h2 {
       .na .na-toggle {
         margin-top: 15px; } }
 
+/* //navigation */
+/* //header */
 @media screen and (max-width: 768px) {
   #home {
     margin-top: 60px; } }
@@ -426,17 +405,16 @@ h2 {
   line-height: 25px; }
 
 .footer-text-head {
-  font-size: 14px;
-  font-family: 'open_sansBold', cursive; }
+  font-size: 14px; }
   @media screen and (max-width: 767px) {
     .footer-text-head {
       margin-top: 30px;
       font-size: 18px; } }
 
 footer {
-  background-color: #1ea78d;
-  border-top: 4px solid #062033;
-  color: white;
+  background-color: #1a1a1a;
+  border-top: 4px solid #1ea78d;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
   padding-bottom: 50px;
   margin-top: 50px; }
@@ -446,9 +424,9 @@ footer {
       footer .footer-container {
         text-align: center; } }
   footer .footer-left > h3 {
-    font-family: 'pacifico', cursive;
+    font-family: 'Roboto', san-serif;
     font-size: 25px;
-    color: white  !important;
+    color: rgba(255, 255, 255, 0.7) !important;
     padding: 0;
     margin-top: 0; }
   footer .footer-left > p {
@@ -462,8 +440,8 @@ footer {
         margin-top: 15px; } }
   footer .footer-center-content-text, footer .footer-center-content-submit {
     border-style: none;
-    color: #0f0f0f;
-    background: #1ea78d;
+    color: rgba(255, 255, 255, 0.7);
+    background: #1a1a1a;
     outline: none !important;
     margin-top: 8px;
     height: 32px;
@@ -486,7 +464,7 @@ footer {
   footer .footer-center-link-div-first > a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 10px; }
     @media screen and (max-width: 991px) {
       footer .footer-center-link-div-first > a {
@@ -495,6 +473,8 @@ footer {
       footer .footer-center-link-div-first > a {
         font-size: 13px;
         text-align: left; } }
+  footer .footer-center-link-div-first > a:hover {
+    color: orange; }
   footer .footer-center-link-div-second {
     float: left;
     margin-top: 16px;
@@ -514,7 +494,7 @@ footer {
   footer .footer-center-link-div-second > a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 10px; }
     @media screen and (max-width: 991px) {
       footer .footer-center-link-div-second > a {
@@ -523,18 +503,20 @@ footer {
       footer .footer-center-link-div-second > a {
         font-size: 13px;
         text-align: right; } }
+  footer .footer-center-link-div-second > a:hover {
+    color: orange; }
   footer .footer-right {
     margin-top: 50px; }
   footer .footer-right > p {
     line-height: 25px; }
   footer .footer-right > p > i {
     font-size: 20px;
-    color: #17816d;
+    color: rgba(255, 255, 255, 0.7);
     margin-right: 5px;
     margin-left: 5px; }
   footer .footer-right > p:last-child {
     margin-top: 30px;
-    color: black; }
+    color: rgba(255, 255, 255, 0.7); }
     @media screen and (max-width: 768px) {
       footer .footer-right > p:last-child {
         margin-top: 10px; } }
