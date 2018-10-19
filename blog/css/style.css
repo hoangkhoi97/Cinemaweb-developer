@@ -7,7 +7,14 @@ body {
     background-color: #f7f9fa;
 }
 
+h2.bloghead {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 
+a:hover {
+    text-decoration:none;
+}
 
 /* Header 
 .header {
@@ -139,6 +146,7 @@ body {
     border-style: solid;
     border-width: 2px;
     border-color: #D5D5D5;
+    font-size: 17px;
     background-color: white;
     padding: 20px;
     margin-top: 20px;
@@ -230,6 +238,19 @@ body {
     font-size: 14px;
 }
 
+/*Float image*/
+.imgfloat
+{
+    width: 280px;
+    height: 170px;
+    float: left;
+    margin-right: 20px;
+}
+
+.overflow
+{
+    overflow: auto;
+}
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */

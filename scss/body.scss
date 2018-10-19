@@ -26,7 +26,10 @@ h2 {
     margin-top: 100px;
   }
 }
+.f-left{ float: left;}
+.f-right{float: right;}
 
 @import 'header';
 @import 'main';
 @import 'footer';
+@import 'slot';

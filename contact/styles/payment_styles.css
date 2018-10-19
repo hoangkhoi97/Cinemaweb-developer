@@ -711,12 +711,9 @@ section
 }
 .payment_method
 {
-	border-top: double skyblue;
-	padding-top: 30px;
 	text-align: center;
 	display: block;
 	margin: 0 auto;
-	width: 500px;
 	margin-bottom: 50px;
 	margin-top: 40px;
 }

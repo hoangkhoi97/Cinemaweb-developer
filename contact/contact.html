@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>UIT's Contact</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +15,7 @@
 	<link rel="icon" href="../img/index_icon.png"/>
 	<link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/file:///C:/Users/15520/Desktop/Contac2/services.htmlcss">
 	<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+	<title>UIT's Contact</title>
 </head>
 
 <body>
@@ -89,12 +89,12 @@
 
 
 		<!-- Home -->
-		<div class="row">
+		<div class="row" style="width: 80%; margin-left: 10%">
 					<div class="col">
 						<div id="google_map">
 							<div class="map_container">
 								<div id="map">
-									<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Dai%20Hoc%20Cong%20Nghe%20Thong%20Tin%20Ho%20Chi%20Minh+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div><br />
+									<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Dai%20Hoc%20Cong%20Nghe%20Thong%20Tin%20Ho%20Chi%20Minh+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=15&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a></iframe></div>
 								</div>
 							</div>
 						</div>
@@ -110,18 +110,24 @@
 					<div class="col-lg-8">
 						<div class="contact_main_content">
 
-							<div class="contact_subtitle">LỜI NHẮN</div>
+							<h3>Hãy để lại lời nhắn cho chúng tôi</h3>
 
 							<!-- Contact Us Form -->
 							<div class="contact_form_container">
 								<form id="reply_form" action="post">
 									<div>
-										<input id="contact_form_name" class="input_field contact_form_name" type="text" placeholder="Name" required="required" data-error="Name is required.">
-										<input id="contact_form_email" class="input_field contact_form_email" type="email" placeholder="E-mail" required="required" data-error="Valid email is required.">
+                        				<input  id="contact_form_name" class="form-control contact_form_name" placeholder="Tên" required="required" data-error="Bắt buộc nhập tên">
+
+										<input  id="contact_form_email" class="form-control contact_form_email" placeholder="Email" required="required" data-error="Bắt buộc nhập email hợp lệ">
+									</div>
+									<br>
+									<div>
 										<textarea id="contact_form_message" class="text_field contact_form_message" name="message"  placeholder="Message" rows="4" required data-error="Please, write us a message."></textarea>
 									</div>
+									<br>
 									<div>
-										<button id="contact_form_submit" type="submit" class="contact_submit_btn trans_300" value="Submit">GỬI</button>
+										<!-- Submit-->
+                    					<button id="contact_form_submit" type="submit" class="btn btn-primary" value="Submit" style="margin-left:70%; width: 200px">Gửi</button>
 									</div>
 								</form>
 							</div>
@@ -136,11 +142,10 @@
 							<!-- Contact Info -->
 							<div class="sidebar_section">
 								<div class="sidebar_contact_info">
-									<div class="sidebar_title">THÔNG TIN</div>
+									<h3>Thông tin</h3>
 									<ul>
-										<li>123, đường Tô Hiến Thành, Q10 
-											<br>
-										TPHCM, Việt Nam</li>
+										<li>135 Nam Kỳ Khởi Nghĩa, quận 1, 
+											<br>TP. Hồ Chí Minh, Việt Nam</li>
 										<li>Công ty TNHH MMTT</li>
 										<li>01123 456 </li>
 									</ul>
@@ -151,40 +156,9 @@
 					</div>
 
 				</div>
-
-				<!-- Google Map Container -->
-
-				
-
 			</div>
 		</div>
-
-		<!-- Contact -->
-
-		<div class="contact prlx_parent">
-			<div class="contact_background prlx" style="background-image:url(images/cinema.jpg)"></div>
-			<div class="container">
-
-				<div class="row">
-					<div class="col-lg-6 offset-lg-3 text-center section_title contact_title">
-						<h2>Xem phim nhận nhiều ưu đãi</h2>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-10 offset-lg-1 text-center contact_text">
-						<p>HÃY LIÊN HỆ CHÚNG TÔI NGAY ĐỂ BIẾT THÊM CHI TIẾT</p>
-						<div class="button contact_button">
-							<a href="contact.html" class="d-flex flex-row align-items-center justify-content-center">LIÊN HỆ</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-		</div>
+	</div>
 
 <!-- Footer -->
 
