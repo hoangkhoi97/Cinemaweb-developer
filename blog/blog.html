@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Blog</title>
-  <meta charset="UTF-8"/>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 
@@ -33,67 +33,70 @@
 
 
 <body>
-
-<div class="container-fluid bg-gray">
-  <a class="na-brand" href="../index.html"><img src="../img/index_icon.png" width="5%"></a>
-  <div class="navbar-right mg-top-20">
-    <a class="na-sign-in" href="../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
-    <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
-    <div class="langauge">
-      <p><a  href="#">EN</a>
-        |
-        <a class=" langauge-active" href="#">VN</a> </p>
+<header>
+  <div class="container-fluid bg-gray">
+    <a class="na-brand" href="../index.html"><img src="../img/index_icon_range.png" width="10%"></a>
+    <div class="navbar-right mg-top-20">
+      <a class="na-sign-in" href="../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
+      <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
+      <div class="langauge">
+        <p><a  href="#">EN</a>
+          |
+          <a class="langauge-active" href="#">VN</a> </p>
+      </div>
+    </div>
+    <div class="na-bot mg-top-10">
+      <form class="navbar-form navbar-left" action="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Tìm kiếm tên phim, ưu đãi,...">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
-  <div class="na-bot mg-top-10">
-    <form class="navbar-form navbar-left" action="">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Tìm kiếm tên phim, ưu đãi,...">
-        <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
-            <i class="fa fa-search"></i>
+
+  <nav class="navbar navbar-default na">
+    <div class="container">
+      <div class="row">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle na-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
         </div>
-      </div>
-    </form>
-  </div>
-</div>
 
-<nav class="navbar navbar-default na">
-  <div class="container">
-    <div class="row">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle na-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+        <div class="collapse navbar-collapse na-right" id="myNavbar">
+          <ul class="nav navbar-nav ">
+            <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">PHIM<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../movie/now_showing.html">PHIM ĐANG CHIẾU</a></li>
+                <li><a href="../movie/comming_soon.html">PHIM SẮP CHIẾU</a></li>
+              </ul>
+            </li>
+            <li><a class="na-item " href="../sale/sale.html">ƯU ĐÃI</a></li>
+            <li><a class="na-item" href="../blog/blog.html">BLOG ĐIỆN ẢNH</a></li>
+            <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">RẠP<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../cinema/cinema_normal.html">CÁC CỤM RẠP</a></li>
+                <li><a href="../cinema/cinema_special.html">RẠP ĐẶC BIỆT</a></li>
+              </ul>
+            </li>
+            <li><a class="na-item" href="../contact/contact.html">LIÊN HỆ</a></li>
+            <li><a class="na-item" href="../sign_in/user.html">THÀNH VIÊN</a></li>
+            <li><a class="na-item" href="../contact/payment.html">THANH TOÁN</a></li>
+          </ul>
+        </div>
       </div>
 
-      <div class="collapse navbar-collapse na-right" id="myNavbar">
-        <ul class="nav navbar-nav ">
-          <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">PHIM<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">PHIM ĐANG CHIẾU</a></li>
-              <li><a href="#">PHIM SẮP CHIẾU</a></li>
-            </ul>
-          </li>
-          <li><a class="na-item " href="#">ƯU ĐÃI</a></li>
-          <li><a class="na-item" href="../blog/blog.html">BLOG ĐIỆN ẢNH</a></li>
-          <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">RẠP<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">CÁC CỤM RẠP</a></li>
-              <li><a href="#">RẠP ĐẶC BIỆT</a></li>
-            </ul>
-          </li>
-          <li><a class="na-item" href="../contact/contact.html">LIÊN HỆ</a></li>
-        </ul>
-      </div>
     </div>
+  </nav>
 
-  </div>
-</nav>
-
+</header>
 <div class="blog_row">
     <div class="leftcolumn">
 

@@ -44,6 +44,9 @@ h2 {
 .mg-top-10 {
   margin-top: 5px; }
 
+.mg-bot-20 {
+  margin-bottom: 20px; }
+
 .bg-gray {
   background-color: #f7f9fa; }
 
@@ -96,7 +99,7 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
     letter-spacing: 2px;
-    margin-right: 50px; }
+    margin-right: 40px; }
     @media screen and (max-width: 768px) {
       .na .na-item {
         text-align: center; } }
@@ -347,6 +350,27 @@ li .tab-item {
   padding-bottom: 40px; }
   #features #features > h2 {
     margin-top: 30px; }
+  #features .title_movie > h3 {
+    float: left;
+    margin-left: 160px;
+    font-size: 30px;
+    color: #FFBB00;
+    font-weight: bold;
+    letter-spacing: 1px; }
+  #features .title_movie > h3 > a {
+    font-family: 'Arial' , san-serif;
+    color: #FFBB00;
+    font-size: 26px;
+    font-weight: bold; }
+  #features .title_movie > h3 > a:hover {
+    color: orange; }
+  #features .title_movie > h3 > .active {
+    color: #e26435;
+    border: none;
+    box-shadow: none;
+    text-decoration: underline !important; }
+  #features .title_movie > h3 > .active:hover {
+    color: red; }
   #features .fea-img-text-bottom > p:first-child {
     margin-top: 10px;
     font-size: 20px; }
@@ -365,7 +389,7 @@ li .tab-item {
       #features .fea-container {
         margin-top: 0; } }
   #features .fea-full-content {
-    padding-bottom: 160px; }
+    padding-bottom: 50px; }
     @media screen and (max-width: 767px) {
       #features .fea-full-content {
         padding-bottom: 20px; } }
@@ -444,7 +468,7 @@ li .tab-item {
     top: 35%;
     font-size: 40px; }
   #features .fea-dot {
-    bottom: 0px;
+    bottom: 0;
     width: 60%; }
   #features .fea-dot li {
     margin-right: 4px;
@@ -658,5 +682,31 @@ footer {
   letter-spacing: 1px;
   float: right;
   font-size: 16px; }
+
+/*User page*/
+.profileimg {
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D5D5D5;
+  border-radius: 50%; }
+
+.profiletext {
+  padding-left: 5%; }
+
+.whiteframe {
+  background-color: white;
+  padding: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #D5D5D5; }
+
+.profilecol1 {
+  padding-top: 30px;
+  border-right: solid;
+  border-width: 2px;
+  border-color: #D5D5D5; }
 
 /*# sourceMappingURL=body.css.map */

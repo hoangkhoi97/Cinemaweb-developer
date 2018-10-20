@@ -140,6 +140,9 @@ section
 .mg-top-10 {
 	margin-top: 5px; }
 
+.mg-bot-20 {
+	margin-bottom: 20px; }
+
 .bg-gray {
 	background-color: #f7f9fa; }
 
@@ -192,7 +195,7 @@ section
 	padding-top: 5px;
 	padding-bottom: 5px;
 	letter-spacing: 2px;
-	margin-right: 100px; }
+	margin-right: 40px; }
 @media screen and (max-width: 768px) {
 	.na .na-item {
 		text-align: center; } }
@@ -226,7 +229,6 @@ section
 
 /* //navigation */
 /* //header */
-
 
 
 .home_social_container

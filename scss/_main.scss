@@ -117,6 +117,35 @@ li .tab-item{
     margin-top:30px;
   }
 
+  .title_movie>h3{
+    float: left;
+    margin-left: 160px;
+    font-size: 30px;
+    color: #FFBB00;;
+
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .title_movie>h3>a{
+    font-family: 'Arial' , san-serif;
+    color: #FFBB00;
+    font-size: 26px;
+    font-weight: bold;
+
+  }
+  .title_movie>h3>a:hover{
+    color:orange;
+  }
+  .title_movie>h3>.active{
+    color:#e26435;
+    border:none;
+    box-shadow: none;
+    text-decoration: underline !important;
+  }
+  .title_movie>h3>.active:hover{
+    color:red;
+  }
+
   .fea-img-text-bottom>p:first-child{
     margin-top: 10px;
     font-size: 20px;
@@ -140,7 +169,7 @@ li .tab-item{
   }
 
   .fea-full-content {
-    padding-bottom: 160px;
+    padding-bottom: 50px;
     @media screen and (max-width: 767px) {
       padding-bottom: 20px;
     }
@@ -251,7 +280,7 @@ li .tab-item{
 
   .fea-dot {
 
-    bottom: 0px;
+    bottom: 0;
 
     width: 60%;
   }

@@ -16,22 +16,16 @@ a:hover {
     text-decoration:none;
 }
 
-/* Header 
-.header {
-    font-size: 40px;
-    text-align: center;
-    background: black;
-}*/
-/* Chia cột */
-
 /* header top */
-
 .mg-top-20 {
     margin-top: 25px;
     font-size: 15px; }
 
 .mg-top-10 {
     margin-top: 5px; }
+
+.mg-bot-20 {
+    margin-bottom: 20px; }
 
 .bg-gray {
     background-color: #f7f9fa; }
@@ -85,7 +79,7 @@ a:hover {
     padding-top: 5px;
     padding-bottom: 5px;
     letter-spacing: 2px;
-    margin-right: 100px; }
+    margin-right: 40px; }
 @media screen and (max-width: 768px) {
     .na .na-item {
         text-align: center; } }
@@ -116,7 +110,6 @@ a:hover {
 @media screen and (max-width: 367px) {
     .na .na-toggle {
         margin-top: 15px; } }
-
 
 /* //navigation */
 /* //header */

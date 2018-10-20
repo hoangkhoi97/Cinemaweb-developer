@@ -25,14 +25,14 @@
 <body>
 <header>
     <div class="container-fluid bg-gray">
-        <a class="na-brand" href="../index.html"><img src="../img/index_icon.png" width="5%"></a>
+        <a class="na-brand" href="../index.html"><img src="../img/index_icon_range.png" width="10%"></a>
         <div class="navbar-right mg-top-20">
             <a class="na-sign-in" href="../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
             <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
             <div class="langauge">
                 <p><a  href="#">EN</a>
-                |
-                <a class=" langauge-active" href="#">VN</a> </p>
+                    |
+                    <a class="langauge-active" href="#">VN</a> </p>
             </div>
         </div>
         <div class="na-bot mg-top-10">
@@ -52,8 +52,6 @@
     <nav class="navbar navbar-default na">
         <div class="container">
             <div class="row">
-               
-
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle na-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -66,19 +64,21 @@
                     <ul class="nav navbar-nav ">
                         <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">PHIM<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">PHIM ĐANG CHIẾU</a></li>
-                                <li><a href="#">PHIM SẮP CHIẾU</a></li>
+                                <li><a href="../movie/now_showing.html">PHIM ĐANG CHIẾU</a></li>
+                                <li><a href="../movie/comming_soon.html">PHIM SẮP CHIẾU</a></li>
                             </ul>
                         </li>
-                        <li><a class="na-item " href="#">ƯU ĐÃI</a></li>
+                        <li><a class="na-item " href="../sale/sale.html">ƯU ĐÃI</a></li>
                         <li><a class="na-item" href="../blog/blog.html">BLOG ĐIỆN ẢNH</a></li>
                         <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">RẠP<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">CÁC CỤM RẠP</a></li>
-                                <li><a href="#">RẠP ĐẶC BIỆT</a></li>
+                                <li><a href="../cinema/cinema_normal.html">CÁC CỤM RẠP</a></li>
+                                <li><a href="../cinema/cinema_special.html">RẠP ĐẶC BIỆT</a></li>
                             </ul>
                         </li>
                         <li><a class="na-item" href="../contact/contact.html">LIÊN HỆ</a></li>
+                        <li><a class="na-item" href="../sign_in/user.html">THÀNH VIÊN</a></li>
+                        <li><a class="na-item" href="../contact/payment.html">THANH TOÁN</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
 <main>
     <div class="container">
         <h3>Đổi password</h3>
-        <form action="/action_page.php">
+        <form action="">
         <div class="form-group" style="margin-left: 35%">
             <label for="pwd">Password mới:</label>
             <input type="password" class="form-control" id="pwd" style="width: 40%" placeholder="Nhập password" name="pwd">
@@ -101,7 +101,7 @@
             <input type="password" class="form-control" id="pwd" style="width: 40%" placeholder="Xác nhận password" name="pwd">
         </div>
         <!-- Submit-->
-        <button type="submit" class="btn btn-primary" style="margin-left: 35%">Đăng nhập</button>
+        <button type="submit" class="btn btn-primary" style="margin-left: 35%">Đổi password</button>
         </form>
 
     </div>

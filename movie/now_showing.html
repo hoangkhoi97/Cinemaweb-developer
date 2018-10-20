@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UIT's Cinema NowShowing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0, shrink-to-fit=no"/>
+
+
+    <link rel="icon" href="../img/index_icon.png"/>
+
+    <!--BootStrap 3.3.7-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!--Font: OpenSans Pacifico Awesome Google -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <!--- Scss link -->
+    <link rel="stylesheet" type="text/css" href="../scss/body.css" />
+
+
+</head>
+<body>
+
+<header>
+    <div class="container-fluid bg-gray">
+        <a class="na-brand" href="../index.html"><img src="../img/index_icon_range.png" width="10%"></a>
+        <div class="navbar-right mg-top-20">
+            <a class="na-sign-in" href="../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
+            <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
+            <div class="langauge">
+                <p><a  href="#">EN</a>
+                    |
+                    <a class="langauge-active" href="#">VN</a> </p>
+            </div>
+        </div>
+        <div class="na-bot mg-top-10">
+            <form class="navbar-form navbar-left" action="">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm tên phim, ưu đãi,...">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default na">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle na-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse na-right" id="myNavbar">
+                    <ul class="nav navbar-nav ">
+                        <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">PHIM<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../movie/now_showing.html">PHIM ĐANG CHIẾU</a></li>
+                                <li><a href="../movie/comming_soon.html">PHIM SẮP CHIẾU</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="na-item " href="../sale/sale.html">ƯU ĐÃI</a></li>
+                        <li><a class="na-item" href="../blog/blog.html">BLOG ĐIỆN ẢNH</a></li>
+                        <li class="dropdown"><a class="na-item dropdown-toggle" data-toggle="dropdown" href="#">RẠP<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../cinema/cinema_normal.html">CÁC CỤM RẠP</a></li>
+                                <li><a href="../cinema/cinema_special.html">RẠP ĐẶC BIỆT</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="na-item" href="../contact/contact.html">LIÊN HỆ</a></li>
+                        <li><a class="na-item" href="../sign_in/user.html">THÀNH VIÊN</a></li>
+                        <li><a class="na-item" href="../contact/payment.html">THANH TOÁN</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+<main>
+
+    <div id = "features" class="text-center ">
+        <div class="container-fluid title_movie">
+            <h3><a href="now_showing.html" class="btn active">PHIM ĐANG CHIẾU</a>/<a href="comming_soon.html" class="btn">PHIM SẮP CHIẾU</a></h3>
+        </div>
+        <div class="container fea-container">
+                        <div class="row">
+                            <div class="col-sm-3 fea-img">
+                                <img src="../img/index_nowshowing/the_nun.jpg" width="100%"/>
+                                <div class="fea-fade">
+                                    <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                                    <div class="fea-fade-text">
+                                        <hr style="border:1px solid #e26435">
+                                        <p class="text-center">
+                                            <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                            <span>18+</span>
+                                            <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                                    </div>
+                                </div>
+                                <div class="fea-img-text-bottom">
+                                    <p>THE NUN</p>
+                                    <p>ÁC QUỶ MA SƠ</p>
+                                </div>
+                            </div >
+                            <div class="col-sm-3 fea-img">
+                                <img src="../img/index_nowshowing/chuoidunglaymecon.jpg" width="100%"/>
+                                <div class="fea-fade">
+                                    <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                                    <div class="fea-fade-text">
+                                        <hr style="border:1px solid #e26435">
+                                        <p class="text-center">
+                                            <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                            <span>18+</span>
+                                            <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                                    </div>
+                                </div>
+                                <div class="fea-img-text-bottom">
+                                    <p>CHÚ ƠI ĐỪNG </p>
+                                    <p>LẤY MẸ CON</p>
+                                </div>
+                            </div >
+
+                            <div class="col-sm-3 fea-img ">
+                                <img src="../img/index_nowshowing/shin.jpg" width="100%"/>
+                                <div class="fea-fade">
+                                    <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                                    <div class="fea-fade-text">
+                                        <hr style="border:1px solid #e26435">
+                                        <p class="text-center">
+                                            <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                            <span>18+</span>
+                                            <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                                    </div>
+                                </div>
+                                <div class="fea-img-text-bottom">
+                                    <p>SHIN</p>
+                                    <p>CẬU BÉ BÚT CHÌ</p>
+                                </div>
+                            </div >
+                            <div class="col-sm-3 fea-img ">
+                                <img src="../img/index_nowshowing/joneyEnglish.jpg" width="100%"/>
+                                <div class="fea-fade">
+                                    <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                                    <div class="fea-fade-text">
+                                        <hr style="border:1px solid #e26435">
+                                        <p class="text-center">
+                                            <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                            <span>18+</span>
+                                            <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                                    </div>
+                                </div>
+                                <div class="fea-img-text-bottom">
+                                    <p>JohnyEnglish</p>
+                                    <p>Điệp viên tái xuất</p>
+                                </div>
+                            </div >
+                        </div>
+                    </div>
+        <div class="container fea-container">
+            <div class="row">
+                <div class="col-sm-3 fea-img">
+                    <img src="../img/index_nowshowing/chuchorobotax.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>THE NUN</p>
+                        <p>ÁC QUỶ MA SƠ</p>
+                    </div>
+                </div >
+                <div class="col-sm-3 fea-img">
+                    <img src="../img/index_nowshowing/smallfoot.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>CHÚ ƠI ĐỪNG </p>
+                        <p>LẤY MẸ CON</p>
+                    </div>
+                </div >
+
+                <div class="col-sm-3 fea-img ">
+                    <img src="../img/index_nowshowing/acquyvohinh.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>SHIN</p>
+                        <p>CẬU BÉ BÚT CHÌ</p>
+                    </div>
+                </div >
+                <div class="col-sm-3 fea-img ">
+                    <img src="../img/index_nowshowing/thienthancongly.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>JohnyEnglish</p>
+                        <p>Điệp viên tái xuất</p>
+                    </div>
+                </div >
+            </div>
+        </div>
+        <div class="container fea-container">
+            <div class="row">
+                <div class="col-sm-3 fea-img">
+                    <img src="../img/index_nowshowing/acquybongdem.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>THE NUN</p>
+                        <p>ÁC QUỶ MA SƠ</p>
+                    </div>
+                </div >
+                <div class="col-sm-3 fea-img">
+                    <img src="../img/index_nowshowing/kehoachdoichong.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>CHÚ ƠI ĐỪNG </p>
+                        <p>LẤY MẸ CON</p>
+                    </div>
+                </div >
+
+                <div class="col-sm-3 fea-img ">
+                    <img src="../img/index_nowshowing/donghomathuat.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>SHIN</p>
+                        <p>CẬU BÉ BÚT CHÌ</p>
+                    </div>
+                </div >
+                <div class="col-sm-3 fea-img ">
+                    <img src="../img/index_nowshowing/nguoitukhosai.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>JohnyEnglish</p>
+                        <p>Điệp viên tái xuất</p>
+                    </div>
+                </div >
+            </div>
+        </div>
+        <div class="container fea-container">
+            <div class="row">
+                <div class="col-sm-3 fea-img">
+                    <img src="../img/index_nowshowing/congiasieugiau.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
+                        <div class="fea-fade-text">
+                            <hr style="border:1px solid #e26435">
+                            <p class="text-center">
+                                <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                <span>18+</span>
+                                <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
+                        </div>
+                    </div>
+                    <div class="fea-img-text-bottom">
+                        <p>THE NUN</p>
+                        <p>ÁC QUỶ MA SƠ</p>
+                    </div>
+                </div >
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal button video -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-button-video-bg">
+                <div class="modal-header">
+                    <button type="button" class="close modal-button-video-close" data-dismiss="modal">&times;</button>
+                    <iframe width="860" height="515" src="https://www.youtube.com/embed/pzD9zGcUNrw"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal button booking -->
+    <div class="modal fade" id="myModalBooking" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close " data-dismiss="modal">&times;</button>
+                    <div >
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a class="tab-item"  href="#1" data-toggle="tab"><span class="f-left tab-day">T5</span> 18/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#1" data-toggle="tab"><span class="f-left tab-day">T6</span> 19/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#2" data-toggle="tab"><span class="f-left tab-day">T7</span> 20/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#3" data-toggle="tab"><span class="f-left tab-day">CN</span> 21/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#2" data-toggle="tab"><span class="f-left tab-day">T2</span> 22/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#3" data-toggle="tab"><span class="f-left tab-day">T3</span> 23/10 <br>2018</a>
+                            </li>
+                            <li><a class="tab-item" href="#3" data-toggle="tab"><span class="f-left tab-day">T4</span> 24/10 <br>2018</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content ">
+                            <div class="tab-pane active" id="1">
+                                <h3>Không có dữ liệu tại ngày này</h3>
+                            </div>
+                            <div class="tab-pane" id="2">
+                                <div class="mg-top-20">
+                                    <ul class="nav nav-tabs tab-fix">
+                                        <li class="tab-item-in"><a  href="#tab_in1_1" data-toggle="tab">UIT CINEMA BÌNH DƯƠNG</a>
+                                        </li>
+                                        <li class="tab-item-in"><a href="#tab_in1_2" data-toggle="tab">UIT CINEMA THỦ ĐỨC</a>
+                                        </li>
+                                        <li class="tab-item-in"><a href="#tab_in1_1" data-toggle="tab">UIT CINEMA BÌNH THẠNH</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" >
+                                        <div class="tab-pane active" id="tab_in1_1">
+                                            <div class=" mg-top-20">
+                                                <hr>
+                                                <ul class="nav nav-tabs tab-fix">
+                                                    <li class="tab-item-in"><a href="#tab_continues">17:00</a>
+                                                    </li>
+                                                    <li class="tab-item-in"><a href="#tab_continues">19:30</a>
+                                                    </li>
+                                                    <li class="tab-item-in"><a href="#tab_continues">21:30</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_in1_2">
+                                            <div class=" mg-top-20">
+                                                <hr>
+                                                <ul class="nav nav-tabs tab-fix">
+                                                    <li class="tab-item-in"><a  href="#tab_continues">17:00</a>
+                                                    </li>
+                                                    <li class="tab-item-in"><a href="#tab_continues">19:30</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="3">
+                                <div class=" mg-top-20">
+                                    <ul class="nav nav-tabs tab-fix">
+                                        <li class="tab-item-in"><a  href="#tab_in_1" data-toggle="tab">UIT CINEMA BÌNH DƯƠNG</a>
+                                        </li>
+                                        <li class="tab-item-in"><a href="#tab_in_2" data-toggle="tab">UIT CINEMA THỦ ĐỨC</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tab-content" >
+                                        <div class="tab-pane active" id="tab_in_1">
+                                            <div class=" mg-top-20">
+                                                <hr>
+                                                <ul class="nav nav-tabs tab-fix">
+                                                    <li class="tab-item-in"><a href="#tab_continues">17:00</a>
+                                                    </li>
+                                                    <li class="tab-item-in"><a href="#tab_continues">21:30</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_in_2">
+                                            <div class=" mg-top-20">
+                                                <hr>
+                                                <ul class="nav nav-tabs tab-fix">
+                                                    <li class="tab-item-in"><a  href="#tab_continues">17:00</a>
+                                                    </li>
+                                                    <li class="tab-item-in"><a href="#tab_continues">19:30</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="mg-top-20">
+                        <a class="btn tab-button-dropdown"  role="button" href="slot.html" >TIẾP TỤC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+
+<footer>
+    <div class="container text-left footer-container">
+        <div class="row">
+            <div class="col-sm-3 footer-left">
+                <a class="na-brand" href="../index.html"><img src="../img/index_icon.png" width="50%"></a>
+            </div>
+            <div class="col-sm-3 footer-center-content">
+                <h5 class="footer-text-head">Thông tin</h5>
+
+                <p class="text-white">Được thành lập năm 2018, chúng tôi có các chứng chỉ cần thiết để bạn có thể tin tưởng và
+                    đến với chúng tôi. Hãy đến với chúng tôi vì những thước phim chân thực sống động đặc sắc đến từng chi tiết đang đợi bạn</p>
+            </div>
+            <div class="col-sm-3 footer-center-link">
+                <h5 class="footer-text-head">Mở rộng</h5>
+                <div class="footer-center-link-div-first">
+                    <a class="footer-link-a" href="#">Youtube</a>
+                    <a class="footer-link-a" href="#">Skype</a>
+                    <a class="footer-link-a" href="#">Instagram</a>
+                    <a class="footer-link-a" href="#">Viber</a>
+                </div>
+                <div class="footer-center-link-div-second">
+                    <a class="footer-link-a" href="#">Facebook</a>
+                    <a class="footer-link-a" href="#">Zalo</a>
+                    <a class="footer-link-a" href="#">Google</a>
+                    <a class="footer-link-a" href="#">Yahoo</a>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12 footer-right">
+                <p class="footer-right-top">Chúng tôi có một <i class="fa fa-heart-o"></i> <spain style="color:orange">ấm áp</spain>
+                    , luôn đợi bạn</p>
+                <p class="copyright"> &copy; 2018 UITC, chạm tới giấc mơ cửa bạn</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
