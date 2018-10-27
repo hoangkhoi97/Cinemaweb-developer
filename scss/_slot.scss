@@ -24,12 +24,20 @@
   text-align: center;
   word-spacing: 8px;
 
-  button{
+  .btn_me{
     border: none;
     background: #E6E9EC;
     padding:5px 7px;
   }
-
+  .btn_me.off{
+    background: #E6E9EC;
+  }
+  .btn_me.on{
+    background: green;
+  }
+  .btn_me.disable{
+    background: red;
+  }
   .slot-button-left{
     float: left;
     margin-left: 60px;

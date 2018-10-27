@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/slot.js"></script>
 
     <!--Font: OpenSans Pacifico Awesome Google -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
@@ -90,144 +91,144 @@
 <main>
     <div class="container mg-top-20">
         <div class="row">
-            <p class="slot-first">CHỌN GHẾ: <span></span></p>
+            <p class="slot-first">CHỌN GHẾ: <span id="slot"></span></p>
             <div class="slot-box">
                 <div class=" slot-container mg-top-25">
                     <button class="slot-button-left">F</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="F19" class="btn_me off" onclick="onSeatClick(this)">19</button>
+                    <button id="F18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="F17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="F16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="F15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="F14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="F13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="F12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="F11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="F10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="F9" class="btn_me off" onclick="onSeatClick(this)">09</button>
+                    <button id="F8" class="btn_me off" onclick="onSeatClick(this)">08</button>
+                    <button id="F7" class="btn_me off" onclick="onSeatClick(this)">07</button>
+                    <button id="F6" class="btn_me off" onclick="onSeatClick(this)">06</button>
+                    <button id="F5" class="btn_me off" onclick="onSeatClick(this)">05</button>
+                    <button id="F4" class="btn_me off" onclick="onSeatClick(this)">04</button>
+                    <button id="F3" class="btn_me off" onclick="onSeatClick(this)">03</button>
+                    <button id="F2" class="btn_me off" onclick="onSeatClick(this)">02</button>
+                    <button id="F1" class="btn_me off" onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">F</button>
                 </div>
                 <div class=" slot-container mg-top-15">
                     <button class="slot-button-left">E</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="E19" class="btn_me off" onclick="onSeatClick(this)">19</button>
+                    <button id="E18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="E17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="E16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="E15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="E14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="E13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="E12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="E11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="E10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="E9" class="btn_me off" onclick="onSeatClick(this)">09</button>
+                    <button id="E8" class="btn_me off" onclick="onSeatClick(this)">08</button>
+                    <button id="E7" class="btn_me off" onclick="onSeatClick(this)">07</button>
+                    <button id="E6" class="btn_me off" onclick="onSeatClick(this)">06</button>
+                    <button id="E5" class="btn_me off" onclick="onSeatClick(this)">05</button>
+                    <button id="E4" class="btn_me off" onclick="onSeatClick(this)">04</button>
+                    <button id="E3" class="btn_me off" onclick="onSeatClick(this)">03</button>
+                    <button id="E2" class="btn_me off" onclick="onSeatClick(this)">02</button>
+                    <button id="E1" class="btn_me off" onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">E</button>
                 </div>
                 <div class=" slot-container mg-top-15">
                     <button class="slot-button-left">D</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="D19" class="btn_me off" onclick="onSeatClick(this)">19</button>
+                    <button id="D18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="D17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="D16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="D15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="D14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="D13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="D12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="D11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="D10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="D9" class="btn_me off " onclick="onSeatClick(this)">09</button>
+                    <button id="D8" class="btn_me off " onclick="onSeatClick(this)">08</button>
+                    <button id="D7" class="btn_me off " onclick="onSeatClick(this)">07</button>
+                    <button id="D6" class="btn_me off " onclick="onSeatClick(this)">06</button>
+                    <button id="D5" class="btn_me off " onclick="onSeatClick(this)">05</button>
+                    <button id="D4" class="btn_me off " onclick="onSeatClick(this)">04</button>
+                    <button id="D3" class="btn_me off " onclick="onSeatClick(this)">03</button>
+                    <button id="D2" class="btn_me off " onclick="onSeatClick(this)">02</button>
+                    <button id="D1" class="btn_me off " onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">D</button>
                 </div>
                 <div class=" slot-container mg-top-15">
                     <button class="slot-button-left">C</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="C19" class="btn_me off " onclick="onSeatClick(this)">19</button>
+                    <button id="C18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="C17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="C16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="C15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="C14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="C13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="C12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="C11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="C10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="C9" class="btn_me off" onclick="onSeatClick(this)">09</button>
+                    <button id="C8" class="btn_me off" onclick="onSeatClick(this)">08</button>
+                    <button id="C7" class="btn_me off" onclick="onSeatClick(this)">07</button>
+                    <button id="C6" class="btn_me off" onclick="onSeatClick(this)">06</button>
+                    <button id="C5" class="btn_me off" onclick="onSeatClick(this)">05</button>
+                    <button id="C4" class="btn_me off" onclick="onSeatClick(this)">04</button>
+                    <button id="C3" class="btn_me off" onclick="onSeatClick(this)">03</button>
+                    <button id="C2" class="btn_me off" onclick="onSeatClick(this)">02</button>
+                    <button id="C1" class="btn_me off" onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">C</button>
                 </div>
                 <div class=" slot-container mg-top-15">
                     <button class="slot-button-left">B</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="B19" class="btn_me off" onclick="onSeatClick(this)">19</button>
+                    <button id="B18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="B17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="B16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="B15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="B14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="B13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="B12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="B11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="B10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="B9" class="btn_me off" onclick="onSeatClick(this)">09</button>
+                    <button id="B8" class="btn_me off" onclick="onSeatClick(this)">08</button>
+                    <button id="B7" class="btn_me off" onclick="onSeatClick(this)">07</button>
+                    <button id="B6" class="btn_me off" onclick="onSeatClick(this)">06</button>
+                    <button id="B5" class="btn_me off" onclick="onSeatClick(this)">05</button>
+                    <button id="B4" class="btn_me off" onclick="onSeatClick(this)">04</button>
+                    <button id="B3" class="btn_me off" onclick="onSeatClick(this)">03</button>
+                    <button id="B2" class="btn_me off" onclick="onSeatClick(this)">02</button>
+                    <button id="B1" class="btn_me off" onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">B</button>
                 </div>
                 <div class=" slot-container mg-top-15">
                     <button class="slot-button-left">A</button>
-                    <button>19</button>
-                    <button>18</button>
-                    <button>17</button>
-                    <button>16</button>
-                    <button>15</button>
-                    <button>14</button>
-                    <button>13</button>
-                    <button>12</button>
-                    <button>11</button>
-                    <button>10</button>
-                    <button>09</button>
-                    <button>08</button>
-                    <button>07</button>
-                    <button>06</button>
-                    <button>05</button>
-                    <button>04</button>
-                    <button>03</button>
-                    <button>02</button>
-                    <button>01</button>
+                    <button id="A19" class="btn_me off" onclick="onSeatClick(this)">19</button>
+                    <button id="A18" class="btn_me off" onclick="onSeatClick(this)">18</button>
+                    <button id="A17" class="btn_me off" onclick="onSeatClick(this)">17</button>
+                    <button id="A16" class="btn_me off" onclick="onSeatClick(this)">16</button>
+                    <button id="A15" class="btn_me off" onclick="onSeatClick(this)">15</button>
+                    <button id="A14" class="btn_me off" onclick="onSeatClick(this)">14</button>
+                    <button id="A13" class="btn_me off" onclick="onSeatClick(this)">13</button>
+                    <button id="A12" class="btn_me off" onclick="onSeatClick(this)">12</button>
+                    <button id="A11" class="btn_me off" onclick="onSeatClick(this)">11</button>
+                    <button id="A10" class="btn_me off" onclick="onSeatClick(this)">10</button>
+                    <button id="A9" class="btn_me off" onclick="onSeatClick(this)">09</button>
+                    <button id="A8" class="btn_me off" onclick="onSeatClick(this)">08</button>
+                    <button id="A7" class="btn_me off" onclick="onSeatClick(this)">07</button>
+                    <button id="A6" class="btn_me off" onclick="onSeatClick(this)">06</button>
+                    <button id="A5" class="btn_me off" onclick="onSeatClick(this)">05</button>
+                    <button id="A4" class="btn_me off" onclick="onSeatClick(this)">04</button>
+                    <button id="A3" class="btn_me off" onclick="onSeatClick(this)">03</button>
+                    <button id="A2" disabled class="btn_me off disable" onclick="onSeatClick(this)">02</button>
+                    <button id="A1" disabled class="btn_me off disable" onclick="onSeatClick(this)">01</button>
                     <button class="slot-button-right">A</button>
                 </div>
                 <div class="slot-text">

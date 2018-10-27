@@ -15,17 +15,23 @@
     <!--Font: OpenSans Pacifico Awesome Google -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
 
+    <!--- animation link -->
+    <link rel="stylesheet" href="./css/animate.css" />
+
+
     <!--- Scss link -->
     <link rel="stylesheet" type="text/css" href="./scss/body.css" />
+
+
 
     <title>UIT's Home</title>
 
 </head>
 <body>
 
-<header>
-    <div class="container-fluid bg-gray">
-        <a class="na-brand" href="./index.html"><img src="./img/index_icon_range.png" width="10%"></a>
+<header class="animated fadeInDown">
+    <div class="container-fluid bg-gray ">
+        <a class="na-brand " href="./index.html"><img  src="./img/index_icon_range.png" width="10%"></a>
         <div class="navbar-right mg-top-20">
             <a class="na-sign-in" href="./sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
             <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
@@ -90,7 +96,7 @@
 
 <main>
 
-    <div id ="home" class="carousel slide" data-ride="carousel">
+    <div id ="home" class="carousel slide animated fadeInUp" data-ride="carousel">
         <ol class="carousel-indicators home-dot">
             <li data-target="#home" data-slide-to="0" class="active"></li>
             <li data-target="#home" data-slide-to="1"></li>
@@ -147,7 +153,7 @@
         </div>
     </div>
 
-    <div id = "features" class="text-center ">
+    <div id = "features" class="text-center animated flipInX delay-1s slower">
         <h2>PHIM</h2>
         <div class="headdingGray"> <sup class="spainGray" style="padding-right:20px">________________</sup><i class="fa fa-heart-o"></i>
             <sup class="spainGray" style="padding-left:20px">________________</sup> </div>
@@ -164,7 +170,7 @@
                                     <div class="fea-fade-text">
                                         <hr style="border:1px solid #e26435">
                                         <p class="text-center">
-                                         <button class="fea-fade-button f-left">CHI TIẾT</button>
+                                         <button class="fea-fade-button f-left" >CHI TIẾT</button>
                                          <span>18+</span>
                                         <button type="button" data-toggle="modal" data-target="#myModalBooking" class="fea-fade-button f-right">ĐẶT VÉ</button> </p>
                                     </div>
@@ -537,9 +543,9 @@
     </div>
 
 
-    <div id = "team" class="container text-center">
+    <div id = "team" class="container text-center ">
         <div class="row">
-            <h2>EVENT</h2>
+            <h2 >EVENT</h2>
             <div class="headdingGray"> <sup class="spainGray" style="padding-right:20px">________________</sup><i class="fa fa-heart-o"></i>
                 <sup class="spainGray" style="padding-left:20px">________________</sup> </div>
 

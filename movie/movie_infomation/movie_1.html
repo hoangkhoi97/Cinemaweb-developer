@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=-1.0, shrink-to-fit=no"/>
-    <meta name="description" content="index brain web"/>
+    <meta charset="UTF-8">
+    <title>Movie The Nun</title>
 
-    <link rel="icon" href="../img/index_icon.png"/>
+    <link rel="icon" href="../../img/index_icon.png"/>
 
     <!--BootStrap 3.3.7-->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
 
     <!--Font: OpenSans Pacifico Awesome Google -->
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="./css/font-awesome-3.3.7.css">-->
-    <!--<link href="./css/icon.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
 
     <!--- Scss link -->
-    <link rel="stylesheet" type="text/css" href="../scss/body.css" />
-    <title>User</title>
+    <link rel="stylesheet" type="text/css" href="../../scss/body.css" />
+
 
 </head>
 <body>
+
 <header>
     <div class="container-fluid bg-gray">
-        <a class="na-brand" href="../index.html"><img src="../img/index_icon_range.png" width="10%"></a>
+        <a class="na-brand" href="../../index.html"><img src="../../img/index_icon_range.png" width="10%"></a>
         <div class="navbar-right mg-top-20">
-            <a class="na-sign-in" href="../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
+            <a class="na-sign-in" href="../../sign_in/sign_in.html"><i class="fa fa-user"></i> ĐĂNG NHẬP</a>
             <a class="hidden" href="#"><i class="fa fa-sign-out"></i> ĐĂNG XUẤT</a>
             <div class="langauge">
                 <p><a  href="#">EN</a>
@@ -90,74 +87,39 @@
 </header>
 
 <main>
-    <div class="container">
-            <div>
-                <h3>Thông tin người dùng</h3>
-                <br>
-                <div class="row whiteframe">
-                    <div class="col-md-4 profilecol1">
 
-                        <div class="center-cropped profileimg">
-                        <img  id="myImg"  src="img/placeholder.jpg">
-                        </div>
-
-                        <label id="#bb" class="avtbutton profilebutton">Đổi ảnh đại diện
-                        <input type="file" id="File"   size="60" >
-                        </label> 
-
-
-                        <hr>
-                         <div>
-                            <h4>Họ</h4>
-                            <p class="profiletext" id="fname" contenteditable="true">Nguyễn</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Tên</h4>
-                            <p class="profiletext" id="name" contenteditable="true">Văn A</p>
-                        </div>
-                    </div>
-                    <div class="col-md-8" style="background-color: white; padding: 20px;">
-
-                       <hr>
-                        <div>
-                            <h4>Username</h4>
-                            <p class="profiletext" id="user" contenteditable="true">Trevor A Nguyễn</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Email</h4>
-                            <p class="profiletext" id="mail" contenteditable="true">Anv@gmail.com</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Ngày sinh</h4>
-                            <p class="profiletext" id="bdate" contenteditable="true">5/5/1995</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <h4>Số điện thoại</h4>
-                            <p class="profiletext" id="phone" contenteditable="true">0123456789</p>
-                        </div>
-                        <hr>
-                        <div>
-                            <button id="save" class="btn btn-primary" style="margin-left: 70%">Lưu thay đổi</button>
-                        </div>
+    <div id = "features" class="text-center ">
+        <div class="container-fluid title_movie">
+            <h3 style="margin-left:10px;"><a href="movie_1.html" class="btn active">THÔNG TIN PHIM</a></h3>
+        </div>
+        <div class="container fea-container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="../../img/index_nowshowing/the_nun.jpg" width="100%"/>
+                    <div class="fea-fade">
+                        <button type="button" class="fea-fade-play" data-toggle="modal" data-target="#myModal"><i class="fa fa-play-circle-o"></i></button>
                     </div>
                 </div>
-                
-
+                <div class="col-sm-6">
+                </div>
             </div>
-
         </div>
+        <div class="container fea-container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><span style="font-weight: bold">Địa chỉ:</span> 456,Điện Biên Phủ, Tân Uyên, Bình Dương</h4>
+                    <h4><span style="font-weight: bold">SDT của rạp:</span> +84 456 789</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
-
 
 <footer>
     <div class="container text-left footer-container">
         <div class="row">
             <div class="col-sm-3 footer-left">
-                <a class="na-brand" href="../index.html"><img src="../img/index_icon.png" width="50%"></a>
+                <a class="na-brand" href="../../index.html"><img src="../../img/index_icon.png" width="50%"></a>
             </div>
             <div class="col-sm-3 footer-center-content">
                 <h5 class="footer-text-head">Thông tin</h5>
@@ -188,76 +150,5 @@
         </div>
     </div>
 </footer>
-
-<!--Edit info-->
-
-<script type="text/javascript">
-    
-var theName = $('#name');// set the content
-var theFname = $('#fname');
-var theUser = $('#user');
-var theMail = $('#mail');
-var theBdate = $('#bdate');
-var thePhone = $('#phone');
-
-
-$('#save').on('click', function(){ // store the new content in localStorage when the button is clicked
-    var editedName  = theName.html();
-    localStorage.newName = editedName;
-
-    var editedFname     = theFname.html();
-    localStorage.newFname = editedFname;
-
-    var editedUser  = theUser.html();
-    localStorage.newUser = editedUser;
-
-    var editedMail  = theMail.html();
-    localStorage.newMail = editedMail;
-
-    var editedBdate     = theBdate.html();
-    localStorage.newBdate = editedBdate;
-
-    var editedPhone     = thePhone.html();
-    localStorage.newPhone = editedPhone;
-});
-
-if(localStorage.getItem('newName')) { // apply the newContent when it is exist ini localStorage
-    theName.html(localStorage.getItem('newName'));
-}
-if(localStorage.getItem('newFname')) {
-    theFname.html(localStorage.getItem('newFname'));
-}
-if(localStorage.getItem('newUser')) {
-    theUser.html(localStorage.getItem('newUser'));
-}
-if(localStorage.getItem('newEmail')) {
-    theMail.html(localStorage.getItem('newMail'));
-}
-if(localStorage.getItem('newBdate')) {
-    theBdate.html(localStorage.getItem('newBdate'));
-}
-if(localStorage.getItem('newPhone')) {
-    thePhone.html(localStorage.getItem('newPhone'));
-}
-</script>
-
-<!--Profile pic-->
-
-<script type="text/javascript">
-$(function () {
-    $(":file").change(function () {
-        if (this.files && this.files[0]) {
-            var reader = new FileReader();
-            reader.onload = imageIsLoaded;
-            reader.readAsDataURL(this.files[0]);
-        }
-    });
-});
-
-function imageIsLoaded(e) {
-    $('#myImg').attr('src', e.target.result);
-};
-</script>
-
 </body>
 </html>
