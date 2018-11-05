@@ -16,7 +16,7 @@
 
 
 %dot{
-  border: 1px solid #4e4e4e ;
+  border: 1px solid black ;
   height: 8px;
   width: 8px;
   border-radius: 50%;
@@ -231,6 +231,7 @@ select option[disabled]:first-child {
   .home-dot li {
     display: block;
     @extend %dot;
+    border-color: white;
     @media screen and( max-width: 768px) {
       margin-top: 3px;
     }
